@@ -1,3 +1,161 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+/* END OF FONTS */
+
+/* GRID */
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(10px, auto);
+}
+
+#div-problem {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#div-code {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#div-submit {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#div-test {
+	grid-column: 1;
+	grid-row: 4;
+}
+/* END OF GRID */
+
+/* PROBLEM PANEL */
+#text-problem-heading {
+	position: relative;
+	top: 20px;
+	font-family: 'Arial', Sans-serif;
+	font-size: 1.2em;
+}
+
+#text-problem-text {
+	border: 1px solid gray;
+	padding: 8px;
+	font-family: 'Muli', Sans-serif;
+	font-size: 1.05em;
+}
+
+span.var {
+	font-weight: bold;
+	color: red;
+}
+/* END OF PROBLEM PANEL */
+
+/* CODE PANEL */
+pre {
+	font-family: Courier New;
+	font-weight: bold;
+	font-size: 1.05em;
+	margin: 0px;
+}
+
 div#editor {
+	border: 1px solid gray;
+	font-family: Courier New;
+	font-size: 1.05em;
 	height: 400px;
 }
+/* END OF CODE PANEL */
+
+/* SUBMIT AND TEST PANEL */
+#div-submit {
+	text-align: right;
+}
+
+#div-test-container {
+	border: 1px solid gray;
+	padding: 8px;
+}
+
+#text-test-heading {
+	position: relative;
+	top: 16px;
+	font-family: 'Arial', Sans-serif;
+	font-size: 1.2em;
+}
+
+#button-test {
+	background: linear-gradient(#2f6884, #367696);
+	box-shadow: 0px 6px 0px #214a5e, 0px 3px 15px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+}
+
+#button-test:active {
+	background: linear-gradient(#367696, #2f6884);
+	box-shadow: 0px 2px 0px #214a5e, 0px 1px 6px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+}
+
+#button-submit {
+	background: linear-gradient(#cca12e, #d6a82f);
+	box-shadow: 0px 6px 0px #775d19, 0px 3px 15px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+}
+
+#button-submit:active {
+	background: linear-gradient(#d6a82f, #cca12e);
+	box-shadow: 0px 2px 0px #775d19, 0px 1px 6px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+}
+
+.button-control {
+	width: 120px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px;
+	font-family: 'Arial', Sans-serif;
+	font-weight: bold;
+	font-size: 1.05em;
+	color: #FFFFFF;
+	border-radius: 4px;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
+}
+
+.button-control:active {
+	transform: translate(0, 4px);
+}
+
+div#test-group-container {
+	margin-bottom: 16px;
+}
+
+div.test-group {
+	display: inline-block;
+}
+
+div.test-group label {
+	font-family: 'Muli', Sans-serif;
+	margin-right: 10px;
+}
+
+div.test-group input {
+	width: 64px;
+	font-family: 'Courier New', Sans-serif;
+	font-size: 1.05em;
+	margin-right: 16px;
+}
+
+#text-result-text {
+	display: inline-block;
+	margin-left: 10px;
+	font-family: 'Muli', Sans-serif;
+	font-size: 1.05em;
+}
+
+#input-field-result {
+	margin-left: 10px;
+	font-family: 'Courier New', Sans-serif;
+	font-size: 1.05em;
+	width: 128px;
+}
+/* END OF SUBMIT AND TEST PANEL */

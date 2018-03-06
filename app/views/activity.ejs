@@ -4,13 +4,39 @@
 		<link rel="stylesheet" href="css/activity.css" />
 	</head>
 	<body>
-		<div id="editor"></div>
-		
+		<div class="wrapper">
+			<div id="div-problem">
+				<div id="div-problem-container">
+					<h1 id="text-problem-heading" class="text-header">PROBLEM</h1>
+					<p id="text-problem-text">Complete the function that returns the average of two numbers <span class="var">A</span> and <span class="var">B</span>. You may assume that both <span class="var">A</span> and <span class="var">B</span> are positive integer values.</p>
+				</div>
+			</div>
+			<div id="div-code">
+				<pre>int theFunction(int A, int B) {</pre>
+				<div id="editor"></div>
+				<pre>}</pre>
+			</div>
+			<div id="div-submit">
+				<a id="button-submit" class="button-control">Submit Code</a>
+			</div>
+			<div id="div-test">
+				<h1 id="text-test-heading" class="text-header">TEST PANEL</h1>
+				<div id="div-test-container">
+					<div id="test-group-container">
+						<div class="test-group"><label>A</label><input type="text" /></div>
+						<div class="test-group"><label>B</label><input type="text" /></div>
+					</div>
+					<a id="button-test" class="button-control">Test Code</a>
+					<p id="text-result-text">The return value is: </p>
+					<input type="text" id="input-field-result"></input>
+				</div>
+			</div>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="js/ace/ace.js"></script>
 		<script>
 			var editor = ace.edit("editor");
-			editor.setTheme("ace/theme/monokai");
+			editor.setTheme("ace/theme/clouds");
 			editor.session.setMode("ace/mode/java");
 		</script>
 	</body>
